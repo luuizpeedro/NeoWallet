@@ -1,0 +1,240 @@
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f5;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.iphone-frame {
+  width: 375px;
+  height: 812px;
+  background-color: #fff;
+  border: 10px solid #ddd;
+  border-radius: 50px;
+  position: relative;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.notch {
+  width: 150px;
+  height: 30px;
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  z-index: 10;
+}
+
+.iphone-content {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 40px;
+}
+
+.header-purple {
+  background-color: #8a05be;
+  color: #fff;
+  padding: 20px;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header-icons .material-icons {
+  margin-left: 15px;
+}
+
+.greeting {
+  font-size: 24px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.main-content {
+  background-color: #fff;
+  padding: 20px;
+  position: relative;
+  height: calc(100% - 100px);
+  overflow-y: auto;
+}
+
+.account-info-section,
+.credit-card-section,
+.my-cards-section,
+.transactions-section {
+  padding: 20px 0;
+}
+
+.info-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-label {
+  font-size: 16px;
+  font-weight: 500;
+  color: #444;
+}
+
+.chevron {
+  color: #999;
+}
+
+.balance-value {
+  font-size: 28px;
+  font-weight: 700;
+  margin: 10px 0 0;
+  color: #333;
+}
+
+.shortcuts-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.shortcut-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.shortcut-icon-circle {
+  background-color: #f0f0f5;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #8a05be;
+}
+
+.shortcut-text {
+  font-size: 14px;
+  color: #555;
+  margin: 0;
+}
+
+.my-cards-section {
+  background-color: #f0f0f5;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+  margin: 20px 0;
+}
+
+.my-cards-section .material-icons {
+  color: #555;
+}
+
+.my-cards-section p {
+  font-weight: 500;
+  color: #555;
+  margin: 0;
+}
+
+.credit-card-section .info-header {
+  margin-bottom: 15px;
+}
+
+.credit-card-section .info-header .material-icons {
+  color: #555;
+}
+
+.credit-card-section .info-header .card-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.invoice-label {
+  font-size: 14px;
+  color: #888;
+  margin: 0;
+}
+
+.invoice-value {
+  font-size: 22px;
+  font-weight: 600;
+  color: #555;
+  margin: 5px 0;
+}
+
+.invoice-limit {
+  font-size: 14px;
+  color: #aaa;
+  margin: 0;
+}
+
+.transactions-section {
+  padding: 20px 0;
+}
+
+.transaction-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.transaction-item:last-child {
+  border-bottom: none;
+}
+
+.transaction-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.transaction-info p {
+  margin: 0;
+  color: #555;
+}
+
+.transaction-info .transaction-title {
+  font-weight: 500;
+}
+
+.transaction-amount {
+  font-weight: bold;
+  color: #008000;
+}
+
+.transaction-amount.negative {
+  color: #e54b3c;
+}
+
+.edit-btn {
+  background-color: #8a05be;
+  color: #fff;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1em;
+  display: block;
+  width: 90%;
+  margin: 30px auto;
+  text-align: center;
+}
